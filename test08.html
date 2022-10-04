@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+        .tb-promo {
+            position: relative;
+            width: 846px;
+            height: 472px;
+            margin: 100px auto;
+        }
+        .tb-promo img {
+            width: 846px;
+            height: 472px;
+        }
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 30px;
+            margin-top: -15px;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+        }
+        .tb-promo .prev {
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: rgba(255, 255, 255, .3);
+        }
+        .tb-promo .next {
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            background-color: rgba(70, 165, 222, .3);
+        }
+        .promo-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background-color: rgba(255, 255, 255, .3);
+            border-radius: 7px;
+        }
+        .promo-nav li {
+            float: left;
+            height: 8px;
+            width: 8px;
+            margin: 3px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .promo-nav .selected {
+            background-color: #ff5000;
+        }
+    </style>
+</head>
+<body>
+  <div class="tb-promo">
+      <img src="img/2.jpg" alt="2">
+      <a href="#" class="prev"> &lt; </a>
+      <a href="#" class="next"> &gt; </a>
+      <ul class="promo-nav">
+          <li></li>
+          <li class="selected"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+  </div>
+</body>
+</html>

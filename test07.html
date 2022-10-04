@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+  <style>
+
+    .box {
+      margin: 0 auto;
+      width: 1200px;
+      border: 1px solid pink;
+    }
+
+    .clearfix:after {
+      content: "000";
+      display: block;
+      height: 20px;
+      clear: both;
+      /*visibility: hidden;*/
+    }
+
+    .son {
+      float: left;
+      width: 600px;
+      height: 200px;
+      background-color: #ff8500;
+    }
+
+    .b1 {
+      width: 1200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box clearfix">
+    <div class="son">A</div>
+    <div class="son">B</div>
+    <div class="son">C</div>
+    <!--<div class="son">D</div>-->
+  </div>
+  <!--<div class="b1">AAA</div>-->
+</body>
+</html>
