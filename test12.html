@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Logo</title>
+    <style>
+        * {
+           padding: 0;
+            margin: 0;
+        }
+
+        .logo {
+            position: relative;
+            height: 50px;
+            width: 50px;
+            margin: 10vw auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .logo::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -50px;
+            height: 50px;
+            width: 50px;
+            background: url("img/logo1.png") no-repeat center;
+            transition: left .3s;
+        }
+
+        .logo::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 50px;
+            background: url("img/logo2.jpeg") no-repeat center;
+            transition: left .3s;
+        }
+
+        .logo:hover::before {
+            left: 0;
+        }
+
+        .logo:hover::after {
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+  <div class="logo"></div>
+</body>
+</html>
